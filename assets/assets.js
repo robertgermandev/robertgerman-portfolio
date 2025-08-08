@@ -1,4 +1,3 @@
-import user_image from "./user-image.png";
 import code_icon from "./code-icon.png";
 import code_icon_dark from "./code-icon-dark.png";
 import edu_icon from "./edu-icon.png";
@@ -9,7 +8,12 @@ import vscode from "./vscode.png";
 import firebase from "./firebase.png";
 import figma from "./figma.png";
 import git from "./git.png";
-import mongodb from "./mongodb.png";
+import docker from "./docker-mark-blue.png";
+import postman from "./postman.png";
+import webstorm from "./webstorm.png";
+import slack from "./slack.png";
+import xcode from "./xcode.png";
+import vercel from "./vercel.png";
 import right_arrow_white from "./right-arrow-white.png";
 import logo_light from "./logo-light.png";
 import logo_dark from "./logo-dark.png";
@@ -30,14 +34,12 @@ import close_white from "./close-white.png";
 import web_icon from "./web-icon.png";
 import mobile_icon from "./mobile-icon.png";
 import ui_icon from "./ui-icon.png";
-import graphics_icon from "./graphics-icon.png";
 import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 
 export const assets = {
-  user_image,
   code_icon,
   code_icon_dark,
   edu_icon,
@@ -48,7 +50,12 @@ export const assets = {
   firebase,
   figma,
   git,
-  mongodb,
+  docker,
+  postman,
+  webstorm,
+  slack,
+  xcode,
+  vercel,
   right_arrow_white,
   logo_light,
   logo_dark,
@@ -69,7 +76,6 @@ export const assets = {
   web_icon,
   mobile_icon,
   ui_icon,
-  graphics_icon,
   right_arrow,
   send_icon,
   right_arrow_bold,
@@ -78,53 +84,37 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
-    bgImage: "/work-1.png",
+    title: "Alex Szilagyi Photography",
+    description: "Web Application",
+    bgImage: "/as-photography.png",
+    link: "https://www.alexszilagyi.ro",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
-    bgImage: "/work-2.png",
-  },
-  {
-    title: "Photography site",
-    description: "Web Design",
-    bgImage: "/work-3.png",
-  },
-  {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
-    bgImage: "/work-4.png",
+    title: "Andrei Săliștean Driving School",
+    description: "Web Application",
+    bgImage: "/as-driving-school.png",
+    link: "https://andrei-salistean-driving-school.vercel.app/",
   },
 ];
 
 export const serviceData = [
   {
     icon: assets.web_icon,
-    title: "Web design",
-    description: "Web development is the process of building, programming...",
-    link: "",
+    title: "Web applications",
+    description:
+      "Web development is the process of building, programming, and maintaining websites that are functional and visually appealing.",
   },
   {
     icon: assets.mobile_icon,
-    title: "Mobile app",
+    title: "Mobile applications",
     description:
-      "Mobile app development involves creating software for mobile devices...",
-    link: "",
+      "Mobile app development involves creating software for mobile devices, ensuring smooth performance and usability across platforms.",
   },
   {
     icon: assets.ui_icon,
     title: "UI/UX design",
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
-    link: "",
-  },
-  {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
-    link: "",
+      "UI/UX design focuses on creating a seamless user experience by optimizing interface layouts and interactive elements.",
   },
 ];
 
@@ -132,28 +122,35 @@ export const infoList = [
   {
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
-    title: "Languages",
+    title: "Technologies",
     description:
-      "HTML, CSS, JavaScript, TypeScript, ReactJS, React Native, NextJS, Tailwind, ThreeJS, React Three Fiber, NodeJS, Python, PHP, MySQL, Docker ",
+      "HTML, CSS, JavaScript, TypeScript, ReactJS, React Native, NextJS, Tailwind, ThreeJS, React Three Fiber, NodeJS, Python, PHP, MySQL, Docker.",
   },
   {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
-    description: "B.Tech in Computer Science",
+    description:
+      "Bachelor's degree in Computer Science and I am currently pursuing a Master's degree in Advanced Programming and Databases.",
   },
   {
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
     title: "Projects",
-    description: "Built more than 5 projects",
+    description:
+      "Successfully delivered multiple projects, including two live in production: a photographer's portfolio with secure client galleries, and a single-page application for a driving school.",
   },
 ];
 
 export const toolsData = [
   assets.vscode,
+  assets.webstorm,
+  assets.xcode,
+  assets.vercel,
   assets.firebase,
-  assets.mongodb,
   assets.figma,
   assets.git,
+  assets.docker,
+  assets.postman,
+  assets.slack,
 ];
