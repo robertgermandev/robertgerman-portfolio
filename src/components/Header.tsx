@@ -4,14 +4,18 @@ import { assets } from "../../assets/assets";
 
 const Header = () => {
   const [isScroll, setIsScroll] = useState(false);
-  const sideMenuRef = useRef();
+  const sideMenuRef = useRef<HTMLUListElement>(null);
 
   const openMenu = () => {
-    sideMenuRef.current.style.transform = "translateX(-16rem)";
+    if (sideMenuRef.current) {
+      sideMenuRef.current.style.transform = "translateX(-16rem)";
+    }
   };
 
   const closeMenu = () => {
-    sideMenuRef.current.style.transform = "translateX(16rem)";
+    if (sideMenuRef.current) {
+      sideMenuRef.current.style.transform = "translateX(16rem)";
+    }
   };
 
   useEffect(() => {

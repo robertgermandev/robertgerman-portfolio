@@ -2,7 +2,7 @@ import { assets, workData } from "../../assets/assets";
 import Image from "next/image";
 
 const Work = () => {
-  const handleNavigation = (link) => {
+  const handleNavigation = (link: any) => {
     if (link) {
       window.open(link, "_blank", "noopener,noreferrer");
     }
