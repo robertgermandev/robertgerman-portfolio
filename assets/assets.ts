@@ -8,6 +8,9 @@ import vscode from "./vscode.png";
 import firebase from "./firebase.png";
 import figma from "./figma.png";
 import git from "./git.png";
+import github from './github.png';
+import github_dark from './github_dark.png';
+import linkedin from './linkedin.png';
 import docker from "./docker-mark-blue.png";
 import postman from "./postman.png";
 import webstorm from "./webstorm.png";
@@ -50,6 +53,9 @@ export const assets = {
   firebase,
   figma,
   git,
+  github,
+  github_dark,
+  linkedin,
   docker,
   postman,
   webstorm,
