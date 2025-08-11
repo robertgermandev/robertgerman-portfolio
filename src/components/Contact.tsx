@@ -6,7 +6,11 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import {submitContactForm} from "@/app/actions/contact";
 
-const Contact = ({ isDarkMode }: any) => {
+interface ContactProps {
+  isDarkMode: boolean;
+}
+
+const Contact = ({ isDarkMode }: ContactProps) => {
   const [state, formAction, isPending] = useActionState(submitContactForm, {})
 
   return (

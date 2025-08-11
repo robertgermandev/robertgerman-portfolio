@@ -4,7 +4,12 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { assets } from "../../assets/assets";
 
-const Header = ({isDarkMode, setIsDarkMode}: any) => {
+interface HeaderProps {
+  isDarkMode: boolean;
+  setIsDarkMode: (value: boolean) => void;
+}
+
+const Header = ({ isDarkMode, setIsDarkMode }: HeaderProps) => {
   const [isScroll, setIsScroll] = useState(false);
   const sideMenuRef = useRef<HTMLUListElement>(null);
 
@@ -42,7 +47,8 @@ const Header = ({isDarkMode, setIsDarkMode}: any) => {
       </div>
       <nav
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
-          isScroll && "bg-white/50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/2"
+          isScroll &&
+          "bg-white/50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/2"
         }`}
       >
         <a href="#top">
@@ -54,7 +60,8 @@ const Header = ({isDarkMode, setIsDarkMode}: any) => {
         </a>
         <ul
           className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${
-            !isScroll && "bg-white/50 shadow-sm dark:border dark:border-white/50 dark:bg-transparent"
+            !isScroll &&
+            "bg-white/50 shadow-sm dark:border dark:border-white/50 dark:bg-transparent"
           }`}
         >
           <li>
@@ -79,21 +86,36 @@ const Header = ({isDarkMode, setIsDarkMode}: any) => {
           </li>
         </ul>
         <div className="flex items-center gap-4">
-          <button className="cursor-pointer" onClick={() => setIsDarkMode((prev: any) => !prev)}>
-            <Image src={isDarkMode ? assets.sun_icon : assets.moon_icon} alt="theme" className="w-6" />
+          <button
+            className="cursor-pointer"
+            onClick={() => setIsDarkMode(!isDarkMode)}
+          >
+            <Image
+              src={isDarkMode ? assets.sun_icon : assets.moon_icon}
+              alt="theme"
+              className="w-6"
+            />
           </button>
           <a
             href="#contact"
             className="font-ovo hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 dark:border-white/50"
           >
             Contact{" "}
-            <Image src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} className="w-3" alt="arrow_icon" />
+            <Image
+              src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
+              className="w-3"
+              alt="arrow_icon"
+            />
           </a>
           <button
             className="flex md:hidden ml-3 cursor-pointer"
             onClick={openMenu}
           >
-            <Image src={isDarkMode ? assets.menu_white : assets.menu_black} alt="menu-burger" className="w-6" />
+            <Image
+              src={isDarkMode ? assets.menu_white : assets.menu_black}
+              alt="menu-burger"
+              className="w-6"
+            />
           </button>
         </div>
         <ul

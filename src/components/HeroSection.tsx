@@ -5,7 +5,7 @@ import Image from "next/image";
 import { assets } from "../../assets/assets";
 import { motion } from "motion/react";
 
-const HeroSection = ({isDarkMode}: any) => {
+const HeroSection = ({}: any) => {
   return (
     <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
       <motion.div

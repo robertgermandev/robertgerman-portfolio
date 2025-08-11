@@ -5,7 +5,7 @@ import { serviceData } from "../../assets/assets";
 import Image from "next/image";
 import { motion } from "motion/react";
 
-const Services = ({isDarkMode}: any) => {
+const Services = ({}: any) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}

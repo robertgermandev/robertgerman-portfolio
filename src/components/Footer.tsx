@@ -3,7 +3,11 @@
 import { assets } from "../../assets/assets";
 import Image from "next/image";
 
-const Footer = ({isDarkMode}: any) => {
+interface FooterProps {
+  isDarkMode: boolean;
+}
+
+const Footer = ({ isDarkMode }: FooterProps) => {
   return (
     <div className="mt-20 font-ovo">
       <div className="text-center">

@@ -5,7 +5,11 @@ import Image from "next/image";
 import { infoList, toolsData } from "../../assets/assets";
 import { motion } from 'motion/react';
 
-const About = ({isDarkMode}: any) => {
+interface AboutProps {
+  isDarkMode: boolean;
+}
+
+const About = ({ isDarkMode }: AboutProps) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
