@@ -4,7 +4,7 @@ import { assets, workData } from "../../assets/assets";
 import Image from "next/image";
 import { motion } from "motion/react";
 
-const Work = ({}: any) => {
+const Work = () => {
   const handleNavigation = (link: any) => {
     if (link) {
       window.open(link, "_blank", "noopener,noreferrer");
@@ -12,11 +12,11 @@ const Work = ({}: any) => {
   };
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      id="work" 
+      id="work"
       className="w-full px-[12%] py-10 scroll-mt-20 font-ovo"
     >
       <motion.h4
@@ -27,7 +27,7 @@ const Work = ({}: any) => {
       >
         My portfolio
       </motion.h4>
-      <motion.h2 
+      <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
@@ -36,14 +36,15 @@ const Work = ({}: any) => {
         Projects I've developed
       </motion.h2>
       <motion.p
-        initial={{ opacity: 0, }}
+        initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo">
+        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo"
+      >
         Welcome to my portfolio — a curated selection of projects highlighting
         my expertise in front-end development.
       </motion.p>
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.9 }}
