@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 
 const Work = () => {
-  const handleNavigation = (link: any) => {
+  const handleNavigation = (link: string | URL | undefined) => {
     if (link) {
       window.open(link, "_blank", "noopener,noreferrer");
     }
