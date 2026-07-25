@@ -48,11 +48,13 @@ const About = ({ isDarkMode }: AboutProps) => {
           className="flex-1 min-w-0"
         >
           <p className="mb-10 max-w-full sm:w-full font-ovo">
-            Software Developer with around 4 years of experience, specialized in
-            React and Next.js, with knowledge of Node.js and extensive work with
-            React Native. Passionate about teamwork, clear communication, and
-            building supportive, collaborative environments where
-            knowledge-sharing is key to success.
+            Software Engineer with more than 5 years of experience, specializing
+            in React and Next.js, with strong knowledge of Node.js and extensive
+            work with React Native and Capacitor. Passionate about building
+            secure, user-centered applications, expanding into cybersecurity,
+            and creating collaborative environments where knowledge-sharing
+            fuels success. I also leverage Cursor&apos;s agentic AI to boost
+            productivity, code quality, and development speed.
           </p>
 
           <motion.ul 

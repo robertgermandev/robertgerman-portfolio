@@ -37,8 +37,8 @@ const Services = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo"
       >
-        I create responsive, user-friendly websites that deliver seamless and
-        engaging experiences across all devices.
+        I build secure, high-quality web and mobile applications that deliver
+        seamless experiences across platforms.
       </motion.p>
 
       <motion.div
@@ -47,13 +47,22 @@ const Services = () => {
         transition={{ duration: 0.6, delay: 0.9 }}
         className="grid grid-cols-auto gap-6 my-10 font-ovo"
       >
-        {serviceData.map(({ icon, title, description }, index) => (
+        {serviceData.map(({ icons, title, description }, index) => (
           <motion.div
             whileHover={{ scale: 1.05 }}
             key={index}
             className="border border-gray-400 rounded-lg p-8 hover:bg-lightHover hover:shadow-black cursor hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white"
           >
-            <Image src={icon} alt="icon" className="w-10" />
+            <div className="flex items-center gap-2">
+              {icons.map((icon, iconIndex) => (
+                <Image
+                  key={iconIndex}
+                  src={icon}
+                  alt={`${title} icon`}
+                  className="w-10"
+                />
+              ))}
+            </div>
             <h3 className="text-lg my-4 text-gray-700 dark:text-white">
               {title}
             </h3>

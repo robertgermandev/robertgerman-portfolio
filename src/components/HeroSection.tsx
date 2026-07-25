@@ -15,7 +15,7 @@ const HeroSection = ({}) => {
       >
         <Image
           src={assets.profile_img}
-          alt="profile"
+          alt="Black and white professional headshot of Robert German"
           className="rounded-full w-32"
         />
       </motion.div>
@@ -26,7 +26,6 @@ const HeroSection = ({}) => {
         className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo"
       >
         Hi! I'm Robert German{" "}
-        <Image src={assets.hand_icon} alt="hand" className="w-6" />
       </motion.h3>
       <motion.h1
         initial={{ y: -30, opacity: 0 }}
@@ -34,7 +33,7 @@ const HeroSection = ({}) => {
         transition={{ duration: 0.6, delay: 0.3 }}
         className="text-3xl sm:text-6xl lg:text-[66px] font-ovo"
       >
-        frontend developer based in Alba Iulia, Romania.
+        software engineer based in Alba Iulia, Romania.
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
@@ -42,9 +41,9 @@ const HeroSection = ({}) => {
         transition={{ duration: 0.6, delay: 0.7 }}
         className="max-w-2xl mx-auto font-ovo"
       >
-        I develop seamless, scalable web and mobile applications using React,
-        Next.js, and React Native, always striving for clean code, great UX, and
-        a positive, collaborative team atmosphere.
+        I build secure, high-quality web and mobile applications with React,
+        Next.js, React Native, and Capacitor — and I use Cursor&apos;s agentic
+        AI to ship faster with cleaner code.
       </motion.p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <motion.a
