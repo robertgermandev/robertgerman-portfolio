@@ -53,7 +53,7 @@ const Header = ({ isDarkMode, setIsDarkMode }: HeaderProps) => {
       >
         <a href="#top">
           <Image
-            src={isDarkMode ? assets.logo_dark : assets.logo_light}
+            src={isDarkMode ? assets.logo_light : assets.logo_dark}
             className="w-28 cursor-pointer mr-14"
             alt="logo"
           />

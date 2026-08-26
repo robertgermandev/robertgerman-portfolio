@@ -12,7 +12,7 @@ const Footer = ({ isDarkMode }: FooterProps) => {
     <div className="mt-20 font-ovo">
       <div className="text-center">
         <Image
-          src={isDarkMode ? assets.logo_dark : assets.logo_light}
+          src={isDarkMode ? assets.logo_light : assets.logo_dark}
           alt="logo"
           className="w-36 mx-auto mb-2"
         />
