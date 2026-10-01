@@ -41,9 +41,10 @@ const HeroSection = ({}) => {
         transition={{ duration: 0.6, delay: 0.7 }}
         className="max-w-2xl mx-auto text-base sm:text-lg leading-relaxed font-ovo text-gray-700 dark:text-white/85"
       >
-        I build secure, high-quality web and mobile applications with React,
-        Next.js, React Native, and Capacitor — and I use Cursor&apos;s agentic
-        AI to ship faster with cleaner code.
+        I build secure web and mobile applications with React, Next.js, React
+        Native, and Capacitor.         I&apos;m actively exploring and using agentic
+        AI in my day-to-day development to stay more productive, move faster,
+        and ship better software.
       </motion.p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-2 sm:mt-4">
         <motion.a

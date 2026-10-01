@@ -53,8 +53,9 @@ const About = ({ isDarkMode }: AboutProps) => {
             work with React Native and Capacitor. Passionate about building
             secure, user-centered applications, expanding into cybersecurity,
             and creating collaborative environments where knowledge-sharing
-            fuels success. I also leverage Cursor&apos;s agentic AI to boost
-            productivity, code quality, and development speed.
+            fuels success. I&apos;m also actively exploring and using agentic
+            AI in my day-to-day development to stay more productive, move faster,
+            and ship better software.
           </p>
 
           <motion.ul 
