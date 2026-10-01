@@ -48,14 +48,14 @@ const Work = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.9 }}
-        className="grid grid-cols-1 sm:grid-cols-2 gap-6 my-10 dark:text-black"
+        className="grid grid-cols-1 sm:grid-cols-2 gap-8 my-10 dark:text-black max-w-5xl mx-auto"
       >
         {workData.map(({ bgImage, title, description, link }, index) => (
           <motion.div
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.3 }}
             key={index}
-            className="w-full h-64 sm:h-72 bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group max-w-sm mx-auto"
+            className="w-full aspect-[16/9] bg-no-repeat bg-cover bg-top rounded-lg relative cursor-pointer group"
             style={{ backgroundImage: `url("${bgImage}")` }}
             onClick={() => handleNavigation(link)}
           >
