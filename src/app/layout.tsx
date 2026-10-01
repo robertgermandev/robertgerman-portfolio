@@ -17,7 +17,7 @@ const ovo = Ovo({
 export const metadata: Metadata = {
   title: "Robert German",
   description:
-    "Software Engineer based in Alba Iulia, Romania — specializing in React, Next.js, React Native, and Capacitor.",
+    "Software Developer based in Bucharest, Romania — specializing in React, Next.js, React Native, and Capacitor.",
 };
 
 export default function RootLayout({

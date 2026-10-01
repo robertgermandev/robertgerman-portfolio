@@ -48,7 +48,7 @@ const About = ({ isDarkMode }: AboutProps) => {
           className="flex-1 min-w-0"
         >
           <p className="mb-10 max-w-full sm:w-full font-ovo">
-            Software Engineer with more than 5 years of experience, specializing
+            Software Developer with more than 5 years of experience, specializing
             in React and Next.js, with strong knowledge of Node.js and extensive
             work with React Native and Capacitor. Passionate about building
             secure, user-centered applications, expanding into cybersecurity,

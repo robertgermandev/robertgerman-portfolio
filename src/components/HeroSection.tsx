@@ -33,7 +33,7 @@ const HeroSection = ({}) => {
         transition={{ duration: 0.6, delay: 0.3 }}
         className="text-4xl sm:text-5xl md:text-6xl lg:text-[66px] leading-[1.15] font-ovo"
       >
-        software engineer based in Alba Iulia, Romania.
+        software developer based in Bucharest, Romania.
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
