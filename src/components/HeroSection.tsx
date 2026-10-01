@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 
 const HeroSection = ({}) => {
   return (
-    <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+    <div className="w-11/12 max-w-3xl text-center mx-auto min-h-screen flex flex-col items-center justify-center gap-5 pt-28 sm:pt-32 pb-16">
       <motion.div
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
@@ -15,38 +15,37 @@ const HeroSection = ({}) => {
       >
         <Image
           src={assets.profile_img}
-          alt="profile"
-          className="rounded-full w-32"
+          alt="Black and white professional headshot of Robert German"
+          className="rounded-full w-36 sm:w-40"
         />
       </motion.div>
       <motion.h3
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo"
+        className="flex items-end gap-2 text-xl sm:text-2xl font-ovo"
       >
-        Hi! I'm Robert German{" "}
-        <Image src={assets.hand_icon} alt="hand" className="w-6" />
+        Hi! I&apos;m Robert German
       </motion.h3>
       <motion.h1
         initial={{ y: -30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        className="text-3xl sm:text-6xl lg:text-[66px] font-ovo"
+        className="text-4xl sm:text-5xl md:text-6xl lg:text-[66px] leading-[1.15] font-ovo"
       >
-        frontend developer based in Alba Iulia, Romania.
+        software engineer based in Alba Iulia, Romania.
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.7 }}
-        className="max-w-2xl mx-auto font-ovo"
+        className="max-w-2xl mx-auto text-base sm:text-lg leading-relaxed font-ovo text-gray-700 dark:text-white/85"
       >
-        I develop seamless, scalable web and mobile applications using React,
-        Next.js, and React Native, always striving for clean code, great UX, and
-        a positive, collaborative team atmosphere.
+        I build secure, high-quality web and mobile applications with React,
+        Next.js, React Native, and Capacitor — and I use Cursor&apos;s agentic
+        AI to ship faster with cleaner code.
       </motion.p>
-      <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
+      <div className="flex flex-col sm:flex-row items-center gap-4 mt-2 sm:mt-4">
         <motion.a
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}

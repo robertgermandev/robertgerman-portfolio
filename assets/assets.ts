@@ -17,6 +17,7 @@ import webstorm from "./webstorm.png";
 import slack from "./slack.png";
 import xcode from "./xcode.png";
 import vercel from "./vercel.png";
+import cursor from "./cursor.png";
 import right_arrow_white from "./right-arrow-white.png";
 import logo_light from "./logo-light.png";
 import logo_dark from "./logo-dark.png";
@@ -36,6 +37,7 @@ import close_black from "./close-black.png";
 import close_white from "./close-white.png";
 import web_icon from "./web-icon.png";
 import mobile_icon from "./mobile-icon.png";
+import ios_icon from "./ios-icon.png";
 import ui_icon from "./ui-icon.png";
 import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
@@ -62,6 +64,7 @@ export const assets = {
   slack,
   xcode,
   vercel,
+  cursor,
   right_arrow_white,
   logo_light,
   logo_dark,
@@ -81,6 +84,7 @@ export const assets = {
   close_white,
   web_icon,
   mobile_icon,
+  ios_icon,
   ui_icon,
   right_arrow,
   send_icon,
@@ -90,34 +94,34 @@ export const assets = {
 
 export const workData = [
   {
+    title: "Masa care Unește",
+    description: "Web Application",
+    bgImage: "/masacareuneste.png",
+    link: "https://masacareuneste.ro",
+  },
+  {
     title: "Alex Szilagyi Photography",
     description: "Web Application",
     bgImage: "/as-photography.png",
     link: "https://www.alexszilagyi.ro",
   },
-  {
-    title: "Andrei Săliștean Driving School",
-    description: "Web Application",
-    bgImage: "/as-driving-school.png",
-    link: "https://andrei-salistean-driving-school.vercel.app/",
-  },
 ];
 
 export const serviceData = [
   {
-    icon: assets.web_icon,
+    icons: [assets.web_icon],
     title: "Web applications",
     description:
       "Web development is the process of building, programming, and maintaining websites that are functional and visually appealing.",
   },
   {
-    icon: assets.mobile_icon,
+    icons: [assets.mobile_icon, assets.ios_icon],
     title: "Mobile applications",
     description:
-      "Mobile app development involves creating software for mobile devices, ensuring smooth performance and usability across platforms.",
+      "Cross-platform mobile apps with React Native and Capacitor — focused on performance, security, and a seamless native feel.",
   },
   {
-    icon: assets.ui_icon,
+    icons: [assets.ui_icon],
     title: "UI/UX design",
     description:
       "UI/UX design focuses on creating a seamless user experience by optimizing interface layouts and interactive elements.",
@@ -130,26 +134,27 @@ export const infoList = [
     iconDark: assets.code_icon_dark,
     title: "Technologies",
     description:
-      "HTML, CSS, JavaScript, TypeScript, ReactJS, React Native, NextJS, Tailwind, ThreeJS, React Three Fiber, NodeJS, Python, PHP, MySQL, Docker.",
+      "HTML, CSS, JavaScript, TypeScript, React.js, React Native, Capacitor, Next.js, Three.js, React Three Fiber, Node.js, Python, PHP, MySQL, Docker.",
   },
   {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
     description:
-      "Bachelor's degree in Computer Science and I am currently pursuing a Master's degree in Advanced Programming and Databases.",
+      "Bachelor's in Computer Science (1 December University of Alba Iulia). Currently pursuing the Google Cybersecurity Professional Certificate.",
   },
   {
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
     title: "Projects",
     description:
-      "Successfully delivered multiple projects, including two live in production: a photographer's portfolio with secure client galleries, and a single-page application for a driving school.",
+      "Delivered production apps across web and mobile — including Masa care Unește and a photographer's portfolio with secure client galleries.",
   },
 ];
 
 export const toolsData = [
   assets.vscode,
+  assets.cursor,
   assets.webstorm,
   assets.xcode,
   assets.vercel,
